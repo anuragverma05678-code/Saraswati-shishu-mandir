@@ -1,0 +1,38 @@
+*{box-sizing:border-box;scroll-behavior:smooth}
+:root{--orange:#d97706;--dark:#4a1d0d;--cream:#fff8eb;--gold:#f59e0b;--text:#33251c}
+body{margin:0;font-family:"Noto Sans Devanagari","Mangal",Arial,sans-serif;color:var(--text);line-height:1.7;background:#fff}
+a{text-decoration:none;color:inherit}
+.top{background:#35150b;color:#fff7e8;padding:7px 5%;font-size:13px;display:flex;justify-content:space-between}
+.nav{position:sticky;top:0;z-index:20;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:12px 5%;box-shadow:0 4px 20px #00000012}
+.logo{display:flex;align-items:center;gap:12px}.logo img{width:62px;height:62px;object-fit:contain}
+.logo small{color:var(--orange);font-weight:800}.logo h1{font-size:21px;line-height:1.2;margin:0;color:var(--dark)}#menu{display:flex;gap:18px;font-weight:700;font-size:14px}#menu a:hover{color:var(--orange)}
+#menuBtn{display:none;background:var(--dark);color:#fff;border:0;border-radius:8px;font-size:23px;padding:5px 10px}
+.hero{position:relative;min-height:570px;display:flex;align-items:center;overflow:hidden;background:#fff3d4}
+.hero-bg{position:absolute;inset:0;background:url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Saraswati.jpg") center/cover;opacity:.11}
+.hero-content{position:relative;z-index:2;width:60%;padding:80px 7%}.badge{display:inline-block;border:1px solid #e9bd73;background:#fff8e8;color:var(--dark);border-radius:30px;padding:5px 14px;font-weight:800}
+.hero h2{font-size:55px;line-height:1.05;color:var(--dark);margin:18px 0}.hero p{font-size:18px;max-width:650px}
+.saraswati{position:absolute;right:5%;bottom:-5px;height:540px;z-index:2}.saraswati img{height:100%;max-width:400px;object-fit:contain;filter:drop-shadow(0 15px 25px #4a1d0d22)}
+.btn{display:inline-block;border:0;border-radius:10px;padding:11px 19px;margin:8px 5px 0 0;background:linear-gradient(135deg,#9a3412,#d97706);color:#fff;font-weight:800;cursor:pointer;font-size:15px}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px #0002}.btn.white{background:#fff;color:var(--dark);border:1px solid #d7b06d}
+.notice-bar{display:flex;gap:20px;align-items:center;background:var(--dark);color:#fff;padding:10px 5%}.notice-bar span{flex:1}.notice-bar a{color:#ffd37c;font-weight:800}
+.section{max-width:1200px;margin:auto;padding:80px 6%}.cream{max-width:none;background:var(--cream)}
+.heading{text-align:center;max-width:760px;margin:0 auto 40px}.heading span{color:var(--orange);font-weight:800}.heading h2{font-size:40px;line-height:1.2;margin:5px 0;color:var(--dark)}.heading p{color:#71665b}
+.cards,.features,.facilities,.gallery,.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cards article,.contact>div{background:#fff;border:1px solid #eadbc7;border-radius:18px;padding:28px;box-shadow:0 10px 30px #4a1d0d0a}.icon{font-size:34px}.cards h3,.contact h3{color:var(--dark)}
+.features{grid-template-columns:repeat(4,1fr);max-width:1100px;margin:auto}.features>div{background:#fff;padding:22px;border-radius:16px;border:1px solid #eadbc7}.features b{font-size:28px;color:var(--orange)}
+.facilities{grid-template-columns:repeat(3,1fr)}.facilities>div{padding:20px;background:#fffaf1;border:1px solid #eedcc1;border-radius:15px}
+.gallery{grid-template-columns:repeat(4,1fr)}.photo{background:#fff;border:1px solid #eadbc7;border-radius:15px;overflow:hidden;cursor:pointer;min-height:220px}.photo img{width:100%;height:180px;object-fit:cover}.photo b{display:block;padding:10px}.placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:50px;color:#a95a16;background:linear-gradient(135deg,#fff,#fff0d3)}.placeholder b{font-size:15px}
+.notices{max-width:900px;margin:auto;display:grid;gap:12px}.notices button{display:flex;align-items:center;gap:15px;padding:18px;border:1px solid #eadbc7;background:#fff;border-radius:12px;text-align:left;font:inherit;cursor:pointer}.notices button:hover{border-color:var(--orange);transform:translateX(3px)}.notices span{font-size:23px}.notices b{margin-left:auto;color:var(--orange)}
+.cta{background:linear-gradient(100deg,#5a1e0d,#a4470d);color:#fff;padding:45px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px}.cta h2{margin:4px 0;font-size:32px}.cta .white{color:var(--dark)}
+.contact{grid-template-columns:repeat(3,1fr)}.small{display:inline-block;padding:7px 12px;border-radius:8px;background:#fff1d5;color:#8a3c0b;font-weight:800}
+footer{background:#27110a;color:#fff;padding:30px 6%;display:flex;align-items:center;gap:15px;flex-wrap:wrap}footer img{width:55px;height:55px;object-fit:contain}footer p{margin-left:auto}
+.modal{display:none;position:fixed;inset:0;background:#0009;z-index:100;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal-box,.image-box{background:#fff;border-radius:18px;padding:32px;max-width:520px;width:100%;position:relative}.close{position:absolute;right:12px;top:8px;border:0;background:none;font-size:30px;cursor:pointer}.image-box{max-width:800px;text-align:center}.image-box img{max-width:100%;max-height:70vh;border-radius:10px}
+#topBtn{position:fixed;right:20px;bottom:20px;display:none;border:0;background:var(--dark);color:#fff;width:45px;height:45px;border-radius:50%;font-size:20px;z-index:30}
+@media(max-width:850px){
+  .top{font-size:11px}.nav{flex-wrap:wrap}.logo h1{font-size:17px}.logo img{width:48px;height:48px}#menuBtn{display:block}#menu{display:none;width:100%;flex-direction:column;gap:4px;padding-top:12px}#menu.open{display:flex}
+  .hero{min-height:680px}.hero-content{width:100%;padding:65px 7%;align-self:flex-start}.hero h2{font-size:42px}.saraswati{height:330px;right:50%;transform:translateX(50%);bottom:0}.hero-content p{font-size:15px}
+  .notice-bar{font-size:12px;flex-wrap:wrap}.notice-bar span{min-width:180px}
+  .cards,.features,.facilities,.gallery,.contact{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}
+}
+@media(max-width:550px){
+  .top{display:none}.section{padding:55px 5%}.heading h2{font-size:31px}.cards,.features,.facilities,.gallery,.contact{grid-template-columns:1fr}.hero h2{font-size:36px}.hero-content{padding-top:45px}.saraswati{height:290px}.cta{flex-direction:column;align-items:flex-start}.cta h2{font-size:25px}footer p{margin-left:0;width:100%}
+  }
